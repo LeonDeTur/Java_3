@@ -8,7 +8,7 @@ public class Homework {
 
     // Пусть дан произвольный список целых чисел
     public static void main(String[] args) {
-        List<Integer> array = new ArrayList<Integer>(ThreadLocalRandom.current().nextInt(0, 100));
+        List<Integer> array = new ArrayList<Integer>(ThreadLocalRandom.current().nextInt(0, 100 + 1));
         for (int i = 0; i < array.size(); i ++){
             array.add(i, (ThreadLocalRandom.current().nextInt(0, 100)));
         }
